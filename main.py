@@ -1,7 +1,26 @@
 #REMOVE PASS AND FIX THE FUNCTION
 def sum_of_products(list1, list2):
-    pass
+
+    if len(usr1_list) != len(usr2_list):
+        return "Are these the same length?"
+    
+    listsum = 0
+
+    for i in range(len(usr1_list)):
+        listsum += usr1_list[i] * usr2_list[i]
+    return listsum
+
+    
 
 if __name__ == '__main__':
-   #REMOVE PASS AND YOUR CODE GOES HERE
-    pass
+    usr1_list = input().split()
+    usr2_list = input().split()
+
+    usr1_list = [int(num) for num in usr1_list]
+    usr2_list = [int(num) for num in usr2_list]
+
+    SumofLists = sum_of_products(usr1_list, usr2_list)
+    print(SumofLists)
+
+   
+    
